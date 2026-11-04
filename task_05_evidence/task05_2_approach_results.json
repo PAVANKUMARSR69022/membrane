@@ -1,0 +1,25 @@
+{
+  "turn": {
+    "turned": 45.0,
+    "collided": false
+  },
+  "state": {
+    "state": "Locate",
+    "x": 0.0,
+    "y": 0.0,
+    "heading": 315.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 5.237
+  },
+  "frame": "task_05_evidence\\task05_2_visual_target_approach.png",
+  "size": [
+    640,
+    480
+  ],
+  "image_bytes": 11921
+}

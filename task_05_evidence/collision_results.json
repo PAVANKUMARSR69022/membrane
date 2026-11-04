@@ -1,0 +1,222 @@
+[
+  {
+    "test": "behavior_start_state",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "body": {
+      "state": "Locate",
+      "x": 0.912,
+      "y": -0.001,
+      "heading": 90.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "forward_1",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 1.0,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "forward_2",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 1.0,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "forward_3",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 1.0,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "wall_approach_state",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "body": {
+      "state": "Go to object",
+      "x": 0.855,
+      "y": -3.028,
+      "heading": 90.1,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "first_wall_collision",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 0.533,
+      "collided": true,
+      "retry_count": 1,
+      "failed": false
+    }
+  },
+  {
+    "test": "state_after_collision",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "body": {
+      "state": "Blocked",
+      "x": 0.88,
+      "y": -3.517,
+      "heading": 90.1,
+      "holding": false,
+      "retry_count": 1,
+      "collided": true
+    }
+  },
+  {
+    "test": "backoff_distance_check",
+    "actual_y": -3.517,
+    "expected_y": -2.595,
+    "passed": false
+  },
+  {
+    "test": "turn_recovery_left",
+    "method": "POST",
+    "path": "/turn",
+    "status": 200,
+    "body": {
+      "turned": -90.0,
+      "collided": false
+    }
+  },
+  {
+    "test": "state_after_recovery_turn",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "body": {
+      "state": "Locate",
+      "x": 0.927,
+      "y": -3.635,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 1,
+      "collided": false
+    }
+  },
+  {
+    "test": "reverse_recovery",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 0.0,
+      "collided": true,
+      "retry_count": 2,
+      "failed": false
+    }
+  },
+  {
+    "test": "state_after_reverse_recovery",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "body": {
+      "state": "Blocked",
+      "x": 1.027,
+      "y": -3.635,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 2,
+      "collided": true
+    }
+  },
+  {
+    "test": "turn_to_wall",
+    "method": "POST",
+    "path": "/turn",
+    "status": 200,
+    "body": {
+      "turned": 90.0,
+      "collided": false
+    }
+  },
+  {
+    "test": "second_wall_collision",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 0.0,
+      "collided": true,
+      "retry_count": 3,
+      "failed": true
+    }
+  },
+  {
+    "test": "third_wall_collision",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 0.0,
+      "collided": false,
+      "retry_count": 3,
+      "failed": true
+    }
+  },
+  {
+    "test": "state_after_three_collisions",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "body": {
+      "state": "Failed",
+      "x": 1.043,
+      "y": -3.54,
+      "heading": 95.1,
+      "holding": false,
+      "retry_count": 3,
+      "collided": true
+    }
+  },
+  {
+    "test": "move_after_failure",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "body": {
+      "moved": 0.0,
+      "collided": false,
+      "retry_count": 3,
+      "failed": true
+    }
+  },
+  {
+    "test": "turn_after_failure",
+    "method": "POST",
+    "path": "/turn",
+    "status": 200,
+    "body": {
+      "turned": 0.0,
+      "collided": false,
+      "failed": true
+    }
+  }
+]

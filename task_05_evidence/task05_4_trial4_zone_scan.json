@@ -1,0 +1,24 @@
+{
+  "turn": {
+    "turned": 60.0,
+    "collided": false
+  },
+  "state": {
+    "state": "Carry",
+    "x": 0.0,
+    "y": 1.35,
+    "heading": 330.0,
+    "holding": true,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 4.23
+  },
+  "image_path": "task_05_evidence\\task05_4_trial4_zone_scan.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "test": "collision_backoff",
+    "before": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": -3.0,
+      "heading": 90.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    },
+    "move_response": {
+      "moved": 0.567,
+      "collided": true,
+      "retry_count": 1,
+      "failed": false
+    },
+    "after": {
+      "state": "Blocked",
+      "x": 0.009,
+      "y": -3.52,
+      "heading": 90.0,
+      "holding": false,
+      "retry_count": 1,
+      "collided": true
+    },
+    "expected_y_from_reported_travel_and_0_1m_backoff": -3.467,
+    "backoff_matches_within_0_01m": false,
+    "post_collision_velocity_m_per_second": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "test": "reverse_recovery",
+    "response": {
+      "moved": 0.2,
+      "collided": false,
+      "retry_count": 1
+    },
+    "state": {
+      "state": "Go to object",
+      "x": 0.012,
+      "y": -3.341,
+      "heading": 90.0,
+      "holding": false,
+      "retry_count": 1,
+      "collided": false
+    }
+  },
+  {
+    "test": "collision_retry_2",
+    "response": {
+      "moved": 0.233,
+      "collided": true,
+      "retry_count": 2,
+      "failed": false
+    },
+    "state": {
+      "state": "Blocked",
+      "x": 0.016,
+      "y": -3.5,
+      "heading": 90.0,
+      "holding": false,
+      "retry_count": 2,
+      "collided": true
+    }
+  },
+  {
+    "test": "collision_retry_3",
+    "response": {
+      "moved": 0.1,
+      "collided": true,
+      "retry_count": 3,
+      "failed": true
+    },
+    "state": {
+      "state": "Failed",
+      "x": 0.017,
+      "y": -3.512,
+      "heading": 90.0,
+      "holding": false,
+      "retry_count": 3,
+      "collided": true
+    }
+  },
+  {
+    "test": "health_after_collision_sequence",
+    "response": {
+      "ok": true
+    }
+  },
+  {
+    "test": "server_shutdown",
+    "stopped": true
+  }
+]

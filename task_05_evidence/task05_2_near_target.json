@@ -1,0 +1,25 @@
+{
+  "move": {
+    "moved": 0.5,
+    "collided": false,
+    "retry_count": 0
+  },
+  "state": {
+    "state": "Go to object",
+    "x": 0.693,
+    "y": 0.4,
+    "heading": 330.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 0.91
+  },
+  "frame": "task_05_evidence\\task05_2_near_target.png",
+  "size": [
+    640,
+    480
+  ]
+}

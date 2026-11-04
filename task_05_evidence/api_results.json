@@ -1,0 +1,202 @@
+[
+  {
+    "test": "health",
+    "method": "GET",
+    "path": "/health",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "ok": true
+    }
+  },
+  {
+    "test": "state",
+    "method": "GET",
+    "path": "/state",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "look",
+    "method": "GET",
+    "path": "/look",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "body": {
+      "bytes": 13176,
+      "content_type": "image/jpeg"
+    }
+  },
+  {
+    "test": "depth",
+    "method": "GET",
+    "path": "/depth",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "distance": 3.63
+    }
+  },
+  {
+    "test": "move_zero",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "moved": 0.0,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "turn_zero",
+    "method": "POST",
+    "path": "/turn",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "turned": 0.0,
+      "collided": false
+    }
+  },
+  {
+    "test": "pickup_initial",
+    "method": "POST",
+    "path": "/pickup",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "success": false
+    }
+  },
+  {
+    "test": "drop_initial",
+    "method": "POST",
+    "path": "/drop",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "success": false,
+      "in_drop_zone": false
+    }
+  },
+  {
+    "test": "move_upper_bound",
+    "method": "POST",
+    "path": "/move",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "moved": 1.0,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "move_invalid_over_bound",
+    "method": "POST",
+    "path": "/move",
+    "status": 422,
+    "content_type": "application/json",
+    "body": {
+      "detail": [
+        {
+          "type": "less_than_equal",
+          "loc": [
+            "body",
+            "distance"
+          ],
+          "msg": "Input should be less than or equal to 1",
+          "input": 1.01,
+          "ctx": {
+            "le": 1.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test": "move_invalid_type",
+    "method": "POST",
+    "path": "/move",
+    "status": 422,
+    "content_type": "application/json",
+    "body": {
+      "detail": [
+        {
+          "type": "float_parsing",
+          "loc": [
+            "body",
+            "distance"
+          ],
+          "msg": "Input should be a valid number, unable to parse string as a number",
+          "input": "forward"
+        }
+      ]
+    }
+  },
+  {
+    "test": "turn_upper_bound",
+    "method": "POST",
+    "path": "/turn",
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "turned": 90.0,
+      "collided": false
+    }
+  },
+  {
+    "test": "turn_invalid_over_bound",
+    "method": "POST",
+    "path": "/turn",
+    "status": 422,
+    "content_type": "application/json",
+    "body": {
+      "detail": [
+        {
+          "type": "less_than_equal",
+          "loc": [
+            "body",
+            "degrees"
+          ],
+          "msg": "Input should be less than or equal to 90",
+          "input": 90.01,
+          "ctx": {
+            "le": 90.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test": "turn_invalid_type",
+    "method": "POST",
+    "path": "/turn",
+    "status": 422,
+    "content_type": "application/json",
+    "body": {
+      "detail": [
+        {
+          "type": "float_parsing",
+          "loc": [
+            "body",
+            "degrees"
+          ],
+          "msg": "Input should be a valid number, unable to parse string as a number",
+          "input": "left"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "move": {
+    "moved": 1.0,
+    "collided": false,
+    "retry_count": 0
+  },
+  "state": {
+    "state": "Carry",
+    "x": -0.375,
+    "y": 0.082,
+    "heading": 315.0,
+    "holding": true,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 5.121
+  },
+  "image_path": "task_05_evidence\\task05_4_trial2_zone_approach1.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

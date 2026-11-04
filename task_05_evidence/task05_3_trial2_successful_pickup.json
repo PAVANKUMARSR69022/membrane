@@ -1,0 +1,23 @@
+{
+  "pickup": {
+    "success": true
+  },
+  "state": {
+    "state": "Carry",
+    "x": 1.061,
+    "y": -1.061,
+    "heading": 45.0,
+    "holding": true,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 3.737
+  },
+  "image": "task_05_evidence\\task05_3_trial2_successful_pickup.png",
+  "size": [
+    640,
+    480
+  ]
+}

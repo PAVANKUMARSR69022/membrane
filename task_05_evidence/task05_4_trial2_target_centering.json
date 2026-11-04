@@ -1,0 +1,21 @@
+{
+  "turn": {
+    "turned": -30.0,
+    "collided": false
+  },
+  "state": {
+    "state": "Locate",
+    "x": 0.0,
+    "y": 0.0,
+    "heading": 150.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "image_path": "task_05_evidence\\task05_4_trial2_target_centering.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

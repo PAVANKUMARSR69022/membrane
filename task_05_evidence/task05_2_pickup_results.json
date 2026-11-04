@@ -1,0 +1,20 @@
+{
+  "pickup": {
+    "success": false
+  },
+  "state": {
+    "state": "Go to object",
+    "x": 1.299,
+    "y": 0.75,
+    "heading": 330.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "frame": "task_05_evidence\\task05_2_after_pickup.png",
+  "size": [
+    640,
+    480
+  ]
+}

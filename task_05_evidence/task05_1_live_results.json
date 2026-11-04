@@ -1,0 +1,113 @@
+{
+  "camera": {
+    "old_size": [
+      640,
+      480
+    ],
+    "new_size": [
+      640,
+      480
+    ],
+    "old_band_blue_pixels": 27520,
+    "new_band_blue_pixels": 0,
+    "old_bytes": 13176,
+    "new_bytes": 9694
+  },
+  "requests": [
+    {
+      "test": "start_state",
+      "status": 200,
+      "body": {
+        "state": "Idle",
+        "x": 0.0,
+        "y": 0.0,
+        "heading": 0.0,
+        "holding": false,
+        "retry_count": 0,
+        "collided": false
+      }
+    },
+    {
+      "test": "camera",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "dimensions": [
+        640,
+        480
+      ],
+      "comparison": {
+        "old_size": [
+          640,
+          480
+        ],
+        "new_size": [
+          640,
+          480
+        ],
+        "old_band_blue_pixels": 27520,
+        "new_band_blue_pixels": 0,
+        "old_bytes": 13176,
+        "new_bytes": 9694
+      }
+    },
+    {
+      "test": "clear_move_1",
+      "status": 200,
+      "body": {
+        "moved": 1.0,
+        "collided": false,
+        "retry_count": 0
+      }
+    },
+    {
+      "test": "clear_move_2",
+      "status": 200,
+      "body": {
+        "moved": 1.0,
+        "collided": false,
+        "retry_count": 0
+      }
+    },
+    {
+      "test": "clear_move_3",
+      "status": 200,
+      "body": {
+        "moved": 1.0,
+        "collided": false,
+        "retry_count": 0
+      }
+    },
+    {
+      "test": "controlled_wall_collision",
+      "start": {
+        "state": "Go to object",
+        "x": 3.0,
+        "y": 0.0,
+        "heading": 0.0,
+        "holding": false,
+        "retry_count": 0,
+        "collided": false
+      },
+      "move_response": {
+        "moved": 0.667,
+        "backed_off": 0.1,
+        "collided": true,
+        "retry_count": 1,
+        "failed": false
+      },
+      "final": {
+        "state": "Blocked",
+        "x": 3.567,
+        "y": 0.0,
+        "heading": 0.0,
+        "holding": false,
+        "retry_count": 1,
+        "collided": true
+      },
+      "expected_x_from_moved_less_backoff": 3.5669999999999997,
+      "consistency_error_m": 0.0,
+      "backoff_m": 0.1,
+      "blocked": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "drop": {
+    "released": true,
+    "in_drop_zone": true,
+    "result": "pass"
+  },
+  "state": {
+    "state": "Done",
+    "x": 3.118,
+    "y": 3.15,
+    "heading": 330.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": "pass"
+  },
+  "image_path": "task_05_evidence\\task05_4_trial4_final_drop.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

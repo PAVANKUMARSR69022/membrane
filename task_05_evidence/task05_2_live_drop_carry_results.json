@@ -1,0 +1,153 @@
+[
+  {
+    "test": "drop_without_holding",
+    "status": 200,
+    "body": {
+      "released": false,
+      "in_drop_zone": false,
+      "result": null
+    }
+  },
+  {
+    "test": "state_after_drop_without_holding",
+    "status": 200,
+    "body": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false,
+      "result": null
+    }
+  },
+  {
+    "test": "pickup_for_carry_camera",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "state_while_carrying",
+    "status": 200,
+    "body": {
+      "state": "Carry",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": true,
+      "retry_count": 0,
+      "collided": false,
+      "result": null
+    }
+  },
+  {
+    "test": "task05_2_carrying_view",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "size": [
+      640,
+      480
+    ],
+    "frame": "task_05_evidence\\task05_2_carrying_view.png"
+  },
+  {
+    "test": "move_while_carrying",
+    "status": 200,
+    "body": {
+      "moved": 0.1,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "state_after_carry_move",
+    "status": 200,
+    "body": {
+      "state": "Carry",
+      "x": 0.1,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": true,
+      "retry_count": 0,
+      "collided": false,
+      "result": null
+    }
+  },
+  {
+    "test": "task05_2_carrying_after_move",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "size": [
+      640,
+      480
+    ],
+    "frame": "task_05_evidence\\task05_2_carrying_after_move.png"
+  },
+  {
+    "test": "pickup_inside_drop",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "drop_inside_zone",
+    "status": 200,
+    "body": {
+      "released": true,
+      "in_drop_zone": true,
+      "result": "pass"
+    }
+  },
+  {
+    "test": "final_state_inside_zone",
+    "status": 200,
+    "body": {
+      "state": "Done",
+      "x": 2.3,
+      "y": 2.8,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false,
+      "result": "pass"
+    }
+  },
+  {
+    "test": "pickup_outside_drop",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "drop_outside_zone",
+    "status": 200,
+    "body": {
+      "released": true,
+      "in_drop_zone": false,
+      "result": "fail_not_reached"
+    }
+  },
+  {
+    "test": "final_state_outside_zone",
+    "status": 200,
+    "body": {
+      "state": "Done",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false,
+      "result": "fail_not_reached"
+    }
+  },
+  {
+    "test": "api_harness_stopped",
+    "stopped": true
+  }
+]

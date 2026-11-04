@@ -1,0 +1,20 @@
+{
+  "pickup": {
+    "success": true
+  },
+  "state": {
+    "state": "Carry",
+    "x": 0.996,
+    "y": 0.575,
+    "heading": 330.0,
+    "holding": true,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "image_path": "task_05_evidence\\task05_4_trial1_successful_pickup.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

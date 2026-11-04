@@ -1,0 +1,22 @@
+{
+  "drop": {
+    "released": true,
+    "in_drop_zone": false,
+    "result": "fail_not_reached"
+  },
+  "state": {
+    "state": "Done",
+    "x": 2.13,
+    "y": 1.703,
+    "heading": 310.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": "fail_not_reached"
+  },
+  "image": "task_05_evidence\\task05_3_trial1_final_drop.png",
+  "size": [
+    640,
+    480
+  ]
+}

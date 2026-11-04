@@ -1,0 +1,21 @@
+{
+  "turn": {
+    "turned": -90.0,
+    "collided": false
+  },
+  "state": {
+    "state": "Locate",
+    "x": 0.0,
+    "y": 0.0,
+    "heading": 270.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "image_path": "task_05_evidence\\task05_4_trial4_initial_heading270.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

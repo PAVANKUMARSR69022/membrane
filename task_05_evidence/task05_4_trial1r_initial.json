@@ -1,0 +1,20 @@
+{
+  "state": {
+    "state": "Idle",
+    "x": 0.0,
+    "y": 0.0,
+    "heading": 0.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 3.63
+  },
+  "image_path": "task_05_evidence\\task05_4_trial1r_initial.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

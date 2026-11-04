@@ -1,0 +1,17 @@
+{
+  "state": {
+    "state": "Idle",
+    "x": 0.0,
+    "y": 0.0,
+    "heading": 0.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "image": "task_05_evidence\\task05_3_trial2_initial_observation.png",
+  "size": [
+    640,
+    480
+  ]
+}

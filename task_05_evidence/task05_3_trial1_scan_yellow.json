@@ -1,0 +1,24 @@
+{
+  "turn": {
+    "turned": -15.0,
+    "collided": false
+  },
+  "state": {
+    "state": "Locate",
+    "x": 0.0,
+    "y": 0.0,
+    "heading": 345.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 3.767
+  },
+  "image": "task_05_evidence\\task05_3_trial1_scan_yellow.png",
+  "size": [
+    640,
+    480
+  ]
+}

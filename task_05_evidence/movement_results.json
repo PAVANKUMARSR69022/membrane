@@ -1,0 +1,140 @@
+[
+  {
+    "scenario": "forward_from_initial",
+    "before": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    },
+    "result": {
+      "moved": 0.25,
+      "collided": false,
+      "retry_count": 0
+    },
+    "after": {
+      "state": "Go to object",
+      "x": 0.255,
+      "y": -0.002,
+      "heading": 360.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "scenario": "reverse_from_initial",
+    "before": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    },
+    "result": {
+      "moved": 0.25,
+      "collided": false,
+      "retry_count": 0
+    },
+    "after": {
+      "state": "Go to object",
+      "x": -0.255,
+      "y": -0.002,
+      "heading": 360.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "scenario": "right_turn_and_forward",
+    "before": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    },
+    "result": {
+      "turn": {
+        "turned": 45.0,
+        "collided": false
+      },
+      "state_after_turn": {
+        "state": "Locate",
+        "x": -0.002,
+        "y": -0.004,
+        "heading": 45.0,
+        "holding": false,
+        "retry_count": 0,
+        "collided": false
+      },
+      "move": {
+        "moved": 0.2,
+        "collided": false,
+        "retry_count": 0
+      }
+    },
+    "after": {
+      "state": "Go to object",
+      "x": 0.136,
+      "y": -0.145,
+      "heading": 45.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "scenario": "left_turn_and_forward",
+    "before": {
+      "state": "Idle",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    },
+    "result": {
+      "turn": {
+        "turned": -45.0,
+        "collided": false
+      },
+      "state_after_turn": {
+        "state": "Locate",
+        "x": -0.003,
+        "y": -0.004,
+        "heading": 315.0,
+        "holding": false,
+        "retry_count": 0,
+        "collided": false
+      },
+      "move": {
+        "moved": 0.2,
+        "collided": false,
+        "retry_count": 0
+      }
+    },
+    "after": {
+      "state": "Go to object",
+      "x": 0.137,
+      "y": 0.14,
+      "heading": 315.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "server_shutdown",
+    "stopped": true
+  }
+]

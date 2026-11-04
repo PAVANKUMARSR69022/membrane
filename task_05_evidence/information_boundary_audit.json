@@ -1,0 +1,108 @@
+{
+  "openapi_status": 200,
+  "paths": [
+    "/depth",
+    "/drop",
+    "/health",
+    "/look",
+    "/move",
+    "/pickup",
+    "/state",
+    "/turn"
+  ],
+  "operation_schemas": {
+    "/health": {
+      "get": {
+        "operationId": "health_health_get",
+        "requestBody": null,
+        "responseCodes": [
+          "200"
+        ]
+      }
+    },
+    "/state": {
+      "get": {
+        "operationId": "get_state_state_get",
+        "requestBody": null,
+        "responseCodes": [
+          "200"
+        ]
+      }
+    },
+    "/look": {
+      "get": {
+        "operationId": "look_look_get",
+        "requestBody": null,
+        "responseCodes": [
+          "200"
+        ]
+      }
+    },
+    "/depth": {
+      "get": {
+        "operationId": "depth_depth_get",
+        "requestBody": null,
+        "responseCodes": [
+          "200"
+        ]
+      }
+    },
+    "/move": {
+      "post": {
+        "operationId": "move_move_post",
+        "requestBody": {
+          "$ref": "#/components/schemas/MoveRequest"
+        },
+        "responseCodes": [
+          "200",
+          "422"
+        ]
+      }
+    },
+    "/turn": {
+      "post": {
+        "operationId": "turn_turn_post",
+        "requestBody": {
+          "$ref": "#/components/schemas/TurnRequest"
+        },
+        "responseCodes": [
+          "200",
+          "422"
+        ]
+      }
+    },
+    "/pickup": {
+      "post": {
+        "operationId": "pickup_pickup_post",
+        "requestBody": null,
+        "responseCodes": [
+          "200"
+        ]
+      }
+    },
+    "/drop": {
+      "post": {
+        "operationId": "drop_drop_post",
+        "requestBody": null,
+        "responseCodes": [
+          "200"
+        ]
+      }
+    }
+  },
+  "forbidden_key_violations": [],
+  "state_keys": [
+    "collided",
+    "heading",
+    "holding",
+    "retry_count",
+    "state",
+    "x",
+    "y"
+  ],
+  "depth_body": {
+    "distance": 0.091
+  },
+  "look_content_type": "image/jpeg",
+  "health": 200
+}

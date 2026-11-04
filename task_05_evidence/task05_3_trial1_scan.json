@@ -1,0 +1,46 @@
+[
+  {
+    "heading": 0,
+    "frame": "task_05_evidence\\task05_3_trial1_scan_0.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 90.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 90,
+    "frame": "task_05_evidence\\task05_3_trial1_scan_90.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 90.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 180,
+    "frame": "task_05_evidence\\task05_3_trial1_scan_180.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 90.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 270,
+    "frame": "task_05_evidence\\task05_3_trial1_scan_270.png",
+    "size": [
+      640,
+      480
+    ]
+  }
+]

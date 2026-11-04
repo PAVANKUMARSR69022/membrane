@@ -1,0 +1,25 @@
+{
+  "move": {
+    "moved": 0.3,
+    "collided": false,
+    "retry_count": 0
+  },
+  "state": {
+    "state": "Go to object",
+    "x": 0.52,
+    "y": 0.3,
+    "heading": 330.0,
+    "holding": false,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "depth": {
+    "distance": 1.11
+  },
+  "image_path": "task_05_evidence\\task05_4_trial1_approach_2.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

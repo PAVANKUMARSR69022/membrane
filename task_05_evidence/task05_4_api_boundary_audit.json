@@ -1,0 +1,74 @@
+{
+  "/state": {
+    "status": 200,
+    "body": {
+      "state": "Done",
+      "x": 3.118,
+      "y": 3.15,
+      "heading": 330.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false,
+      "result": "pass"
+    }
+  },
+  "/depth": {
+    "status": 200,
+    "body": {
+      "distance": 0.63
+    }
+  },
+  "/look": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "image_size": [
+      640,
+      480
+    ]
+  },
+  "openapi": {
+    "status": 200,
+    "paths": [
+      "/depth",
+      "/drop",
+      "/health",
+      "/look",
+      "/move",
+      "/pickup",
+      "/state",
+      "/turn"
+    ],
+    "movement_schemas": {
+      "MoveRequest": {
+        "properties": {
+          "distance": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": -1.0,
+            "title": "Distance"
+          }
+        },
+        "type": "object",
+        "required": [
+          "distance"
+        ],
+        "title": "MoveRequest"
+      },
+      "TurnRequest": {
+        "properties": {
+          "degrees": {
+            "type": "number",
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "title": "Degrees"
+          }
+        },
+        "type": "object",
+        "required": [
+          "degrees"
+        ],
+        "title": "TurnRequest"
+      }
+    }
+  }
+}

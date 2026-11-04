@@ -1,0 +1,58 @@
+[
+  {
+    "test": "pickup_when_none_in_reach",
+    "status": 200,
+    "body": {
+      "success": false
+    }
+  },
+  {
+    "test": "aligned_pickup",
+    "status": 200,
+    "body": {
+      "success": true
+    },
+    "state": {
+      "state": "Carry",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": true,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "attached_object_follows_move",
+    "status": 200,
+    "body": {
+      "moved": 0.2,
+      "collided": false,
+      "retry_count": 0
+    },
+    "holding": true,
+    "offset_stayed_constant": true
+  },
+  {
+    "test": "drop_inside_zone",
+    "status": 200,
+    "body": {
+      "success": true,
+      "in_drop_zone": true
+    },
+    "holding_after": false
+  },
+  {
+    "test": "drop_outside_zone",
+    "status": 200,
+    "body": {
+      "success": true,
+      "in_drop_zone": false
+    },
+    "holding_after": false
+  },
+  {
+    "test": "test_http_server_shutdown",
+    "stopped": true
+  }
+]

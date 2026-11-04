@@ -1,0 +1,21 @@
+{
+  "turn": {
+    "turned": -4.0,
+    "collided": false
+  },
+  "state": {
+    "state": "Carry",
+    "x": 1.13,
+    "y": 1.391,
+    "heading": 319.0,
+    "holding": true,
+    "retry_count": 0,
+    "collided": false,
+    "result": null
+  },
+  "image_path": "task_05_evidence\\task05_4_trial2_final_alignment1.png",
+  "image_size": [
+    640,
+    480
+  ]
+}

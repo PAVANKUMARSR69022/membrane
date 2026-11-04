@@ -1,0 +1,102 @@
+[
+  {
+    "heading": 120.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_0.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 165.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_1.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 210.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_2.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 255.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_3.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 300.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_4.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 345.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_5.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 30.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_6.png",
+    "size": [
+      640,
+      480
+    ],
+    "turn": {
+      "turned": 45.0,
+      "collided": false
+    }
+  },
+  {
+    "heading": 75.0,
+    "holding": true,
+    "frame": "task_05_evidence\\task05_3_trial1_carry_scan_7.png",
+    "size": [
+      640,
+      480
+    ]
+  }
+]

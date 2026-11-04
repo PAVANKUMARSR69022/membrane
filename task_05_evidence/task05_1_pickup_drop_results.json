@@ -1,0 +1,149 @@
+[
+  {
+    "test": "pickup_none_in_reach",
+    "status": 200,
+    "body": {
+      "success": false
+    }
+  },
+  {
+    "test": "pickup_aligned",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "state_after_pickup",
+    "status": 200,
+    "body": {
+      "state": "Carry",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": true,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "move_while_holding",
+    "status": 200,
+    "body": {
+      "moved": 0.2,
+      "collided": false,
+      "retry_count": 0
+    }
+  },
+  {
+    "test": "held_object_followed",
+    "offset_before": [
+      0.5,
+      0.0
+    ],
+    "offset_after": [
+      0.5,
+      0.0
+    ],
+    "passed": true
+  },
+  {
+    "test": "pickup_for_inside_drop",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "drop_inside_zone",
+    "status": 200,
+    "body": {
+      "success": true,
+      "in_drop_zone": true
+    }
+  },
+  {
+    "test": "state_after_inside_drop",
+    "status": 200,
+    "body": {
+      "state": "Done",
+      "x": 2.3,
+      "y": 2.8,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "pickup_for_outside_drop",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "drop_outside_zone",
+    "status": 200,
+    "body": {
+      "success": true,
+      "in_drop_zone": false
+    }
+  },
+  {
+    "test": "state_after_outside_drop",
+    "status": 200,
+    "body": {
+      "state": "Done",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "boundary_/state",
+    "status": 200,
+    "body": {
+      "state": "Done",
+      "x": 0.0,
+      "y": 0.0,
+      "heading": 0.0,
+      "holding": false,
+      "retry_count": 0,
+      "collided": false
+    }
+  },
+  {
+    "test": "boundary_/depth",
+    "status": 200,
+    "body": {
+      "distance": 0.03
+    }
+  },
+  {
+    "test": "boundary_/pickup",
+    "status": 200,
+    "body": {
+      "success": true
+    }
+  },
+  {
+    "test": "boundary_/drop",
+    "status": 200,
+    "body": {
+      "success": true,
+      "in_drop_zone": false
+    }
+  },
+  {
+    "test": "results_contains_only_test_results",
+    "note": "No object identifiers or coordinates recorded in this evidence file"
+  },
+  {
+    "test": "test_server_shutdown",
+    "stopped": true
+  }
+]
